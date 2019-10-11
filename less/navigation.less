@@ -1,1 +1,37 @@
 // Navigation code here
+.Navigation {
+   width: 100%;
+   padding-top: 2%;
+   background: @nav-bg;
+   border: 1px solid @sea-shell;
+   .NavWrapper {
+      .MaxWidth;
+      .Flex(@direction: column);
+
+      .Logo {
+         .Flex();
+         margin-bottom: 2%;
+      }
+   }
+}
+
+.Links {
+   .Flex(@justify: space-between);
+   width: 45%;
+   margin: 0 auto;
+   margin-bottom: 1%;
+
+   @media @phone {
+      width: 90%;
+      justify-content: space-evenly;
+   }
+
+   
+
+   a {
+      text-decoration: none;
+      font: @river-bend;
+      font-size: 1.6rem;
+      color: black;
+   }
+}

@@ -166,6 +166,39 @@ p {
 .Navigation {
   width: 100%;
   background: #F6F6F6;
+  border: 1px solid #F1F1F1;
+}
+.Navigation .NavWrapper {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  flex-direction: column;
+}
+.Navigation .NavWrapper .Logo {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  margin-bottom: 2%;
+}
+.Navigation .NavWrapper .Links {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-direction: row;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 1%;
+}
+.Navigation .NavWrapper .Links a {
+  text-decoration: none;
+  font: #454A59;
+  font-size: 1.6rem;
+  color: black;
 }
 footer {
   color: #22283B;

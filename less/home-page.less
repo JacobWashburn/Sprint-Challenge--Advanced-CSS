@@ -54,6 +54,7 @@
    width: 100%;
 
    @media @phone {
+
       .sky {
          display: none;
       }
@@ -70,6 +71,7 @@
 
       @media @phone {
          width: 100%;
+         padding: 10px;
       }
    }
 }
@@ -92,7 +94,8 @@
 .walk-text {
    width: 50%;
    @media @phone {
-      width: 100%;
+      width: 95%;
+      margin: 0 2.5%;
    }
 
    h3 {
@@ -104,9 +107,22 @@
    }
 
    .btn {
-      .CustomBtn();
+      .CustomBtn(@bg-color: @header-font-color);
       &:hover {
-         .CustomBtn(@bg-color: red, @txt-color: black);
+         background-color: @waterloo;
+         color: black;
+         @media @phone {
+            height: 65px;
+            width: 100%;
+            
+         }
+      }
+
+      @media @phone {
+         height: 65px;
+         width: 100%;
+         
+         
       }
    }
 }

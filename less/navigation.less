@@ -2,31 +2,28 @@
 .Navigation {
    width: 100%;
    background: @nav-bg;
-   border:1px solid @sea-shell;
+   border: 1px solid @sea-shell;
    .NavWrapper {
-      max-width: 800px;
-      width: 100%;
-      margin: 1% auto 0 auto;
-      .Flex();
-      flex-direction: column;
+      .MaxWidth;
+      .Flex(@direction: column);
 
       .Logo {
          .Flex();
          margin-bottom: 2%;
       }
+
       .Links {
          .Flex(@justify: space-between);
-         width:45%;
+         width: 45%;
          margin: 0 auto;
          margin-bottom: 1%;
-         
-         a{
+
+         a {
             text-decoration: none;
-            font:@river-bend;
+            font: @river-bend;
             font-size: 1.6rem;
             color: black;
          }
-
       }
    }
 }

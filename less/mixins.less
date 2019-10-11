@@ -3,7 +3,13 @@
    display: flex;
    justify-content: @justify;
    align-content: @align;
-   flex-direction: row;
+   flex-direction: @direction;
+}
+
+.MaxWidth{
+   max-width: 800px;
+      width: 100%;
+      margin: 0 auto;
 }
 
 .CustomBtn(@width: 29%, @height: 12%, @bg-color: black, @txt-color: white){
